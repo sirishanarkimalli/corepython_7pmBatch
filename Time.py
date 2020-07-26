@@ -1,0 +1,30 @@
+class Time:
+
+    def __init__(self,h,m,s):
+        self.h=h
+        self.m =m
+        self.s = s
+
+    def total_seconds(self):
+        return self.h *3600 + self.m*60 +self.s
+
+    #overriding
+    def __str__(self):
+        return f"{self.h:02}:{self.m:02}:{self.s:02}"
+
+    def __eq__(self, other):
+        return self.total_seconds() == other.total_seconds()
+
+    def __gt__(self,other):
+        return self.total_seconds() > other.total_seconds()
+
+    def __int__(self):
+        return self.total_seconds()
+
+t1=Time(10,20,30)
+t2=Time(10,20,30)
+print(t1)
+print(t1==t2)
+print(t1>t2)
+print(10+int(t1))
+
