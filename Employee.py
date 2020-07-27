@@ -22,7 +22,7 @@ obj1 =Employee(1,"Scott","Programmer")
 obj2 =Employee(2,"Mark","Manager")
 obj1.change_job("SRM")
 obj1.show()
-
+obj1.age=20
 obj1._Employee__job="Lead"
 # calling a method
 obj1.show()
