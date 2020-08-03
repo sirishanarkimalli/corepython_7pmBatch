@@ -1,0 +1,8 @@
+<books>
+    <book>
+        <title>Python</title>
+        <price></price>
+        <pub_date></pub_date>
+    </book>
+    <book></book>
+</books>
